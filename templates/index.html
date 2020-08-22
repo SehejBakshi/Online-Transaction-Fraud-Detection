@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud or What?</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body style="background: #000;">
+ <div class="login">
+	<h1>Fraud or What?</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/"method="post">
+    	<input type="text" name="step" placeholder="step" required="required" />
+      <input type="text" name="type" placeholder="type" required="required" />
+		  <input type="text" name="amt" placeholder="amt" required="required" />
+      <input type="text" name="oldBalanceOrig" placeholder="oldBalanceOrig" required="required" />
+      <input type="text" name="newBalanceOrig" placeholder="newBalanceOrig" required="required" />
+      <input type="text" name="oldBalanceDest" placeholder="oldBalanceDest" required="required" />
+      <input type="text" name="newBalanceDest" placeholder="newBalanceDest" required="required" />
+      <input type="text" name="avgCredit" placeholder="avgCredit" required="required" />
+      <input type="text" name="minCredit" placeholder="minCredit" required="required" />
+      <input type="text" name="maxCredit" placeholder="maxCredit" required="required" />
+      <!--<input type="number" name="isFlaggedFraud" placeholder="isFlaggedFraud" required="required" />
+      <input type="number" name="errorBalanceOrig" placeholder="errorBalanceOrig" required="required" />
+      <input type="number" name="errorBalanceDest" placeholder="errorBalanceDest" required="required" /> -->
+      <button type="submit" class="btn btn-primary btn-block btn-large">Fraud or What?</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+</body>
+</html>

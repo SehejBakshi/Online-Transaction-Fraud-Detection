@@ -1,0 +1,25 @@
+[1] "Data Imported"
+Preparation of a new explainer is initiated
+  -> model label       :  The Model 
+  -> data              :  220976  rows  10  cols 
+  -> data              :  rownames to matrix was added ( from 1 to 220976 ) 
+  -> target variable   :  220976  values 
+  -> predict function  :  yhat.default will be used ( [33m default [39m )
+  -> predicted values  :  numerical, min =  7.39039e-09 , mean =  0.4989328 , max =  1  
+  -> model_info        :  package Model of class: xgb.Booster package unrecognized , ver. Unknown , task regression ( [33m default [39m ) 
+  -> residual function :  difference between y and yhat ( [33m default [39m )
+  -> residuals         :  numerical, min =  -0.9087027 , mean =  5.801339e-05 , max =  0.9998274  
+ [32m A new explainer has been created! [39m 
+[1] "Data"
+  step type   amount oldbalanceOrg newbalanceOrig oldbalanceDest newbalanceDest
+1  159    1 50892.81             0              0        4164844        4215737
+  isFlaggedFraud errorBalanceOrig errorBalanceDest
+1              0         50892.81                0
+The Model predicts, that the probability that transaction can be suspicious transaction 0 which is lower than the average model prediction 0.499. For the selected instance model's prediction is lower, than for % of all observations.
+
+The most important variable is errorBalanceOrig (= 50890). It decreases the prediction by 0.4.
+The second most important variable is errorBalanceDest (= 0). It decreases the prediction by 0.034.
+The third most important variable is oldbalanceDest (= 4165000). It decreases the prediction by 0.033.
+The average contribution of all the above variables is significant.
+
+Other variables are with less importance. The contribution of all other variables is -0.032. 

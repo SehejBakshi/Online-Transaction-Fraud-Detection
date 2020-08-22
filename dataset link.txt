@@ -1,0 +1,4 @@
+https://www.kaggle.com/ntnu-testimon/paysim1 - For the main dataset
+
+Since the transaction history dataset is based on our own private transactions, we cannot
+share it at this point of time.
